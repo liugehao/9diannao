@@ -1,0 +1,214 @@
+2013-07-18 10:29:20+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-18 10:29:31+0800 [default] INFO: Spider opened
+2013-07-18 10:29:31+0800 [default] INFO: Resuming crawl (1885 requests scheduled)
+2013-07-18 10:29:31+0800 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/usr/lib/python2.7/threading.py", line 505, in run
+	    self.__target(*self.__args, **self.__kwargs)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/crawler.py", line 80, in start
+	    reactor.run(installSignalHandlers=False) # blocking call
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1192, in run
+	    self.mainLoop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/reactor.py", line 41, in __call__
+	    return self._func(*self._a, **self._kw)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/engine.py", line 104, in _next_request
+	    if not self._next_request_from_scheduler(spider):
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/engine.py", line 130, in _next_request_from_scheduler
+	    request = slot.scheduler.next_request()
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/scheduler.py", line 63, in next_request
+	    request = self._dqpop()
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/scheduler.py", line 95, in _dqpop
+	    return request_from_dict(d, self.spider)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/reqser.py", line 43, in request_from_dict
+	    cb = _get_method(spider, cb)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/reqser.py", line 72, in _get_method
+	    raise ValueError("Method %r not found in: %s" % (name, obj))
+	exceptions.ValueError: Method 'parse_item' not found in: <BaseSpider 'default' at 0x41f4550>
+	
+2013-07-18 10:29:32+0800 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/usr/lib/python2.7/threading.py", line 505, in run
+	    self.__target(*self.__args, **self.__kwargs)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/crawler.py", line 80, in start
+	    reactor.run(installSignalHandlers=False) # blocking call
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1192, in run
+	    self.mainLoop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/reactor.py", line 41, in __call__
+	    return self._func(*self._a, **self._kw)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/engine.py", line 104, in _next_request
+	    if not self._next_request_from_scheduler(spider):
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/engine.py", line 130, in _next_request_from_scheduler
+	    request = slot.scheduler.next_request()
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/scheduler.py", line 63, in next_request
+	    request = self._dqpop()
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/scheduler.py", line 95, in _dqpop
+	    return request_from_dict(d, self.spider)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/reqser.py", line 43, in request_from_dict
+	    cb = _get_method(spider, cb)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/reqser.py", line 72, in _get_method
+	    raise ValueError("Method %r not found in: %s" % (name, obj))
+	exceptions.ValueError: Method 'parse_item' not found in: <BaseSpider 'default' at 0x41f4550>
+	
+2013-07-18 10:29:32+0800 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/usr/lib/python2.7/threading.py", line 505, in run
+	    self.__target(*self.__args, **self.__kwargs)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/crawler.py", line 80, in start
+	    reactor.run(installSignalHandlers=False) # blocking call
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1192, in run
+	    self.mainLoop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/reactor.py", line 41, in __call__
+	    return self._func(*self._a, **self._kw)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/engine.py", line 104, in _next_request
+	    if not self._next_request_from_scheduler(spider):
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/engine.py", line 130, in _next_request_from_scheduler
+	    request = slot.scheduler.next_request()
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/scheduler.py", line 63, in next_request
+	    request = self._dqpop()
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/core/scheduler.py", line 95, in _dqpop
+	    return request_from_dict(d, self.spider)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/reqser.py", line 43, in request_from_dict
+	    cb = _get_method(spider, cb)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/reqser.py", line 72, in _get_method
+	    raise ValueError("Method %r not found in: %s" % (name, obj))
+	exceptions.ValueError: Method 'parse_item' not found in: <BaseSpider 'default' at 0x41f4550>
+	
+2013-07-18 14:27:42+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-18 14:29:46+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-18 14:29:46+0800 [BaixingSpider] INFO: Spider opened
+2013-07-18 14:29:46+0800 [BaixingSpider] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2013-07-18 14:30:04+0800 [scrapy] WARNING: 未找到省市区县 http://handan.baixing.com/bijiben/a268876509.html
+2013-07-18 14:30:05+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a277218801.html
+2013-07-18 14:30:12+0800 [scrapy] WARNING: 未找到省市区县 http://shanghai.baixing.com/bijiben/a277176332.html
+2013-07-18 14:30:13+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a273319329.html
+2013-07-18 14:30:17+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a277036747.html
+2013-07-18 14:30:21+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a274370924.html
+2013-07-18 14:30:31+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a276953507.html
+2013-07-18 14:30:35+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a250137950.html
+2013-07-18 14:30:39+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a277047376.html
+2013-07-18 14:30:42+0800 [scrapy] WARNING: 未找到省市区县 http://tianjin.baixing.com/bijiben/a270991521.html
+2013-07-18 14:30:46+0800 [BaixingSpider] INFO: Crawled 55 pages (at 55 pages/min), scraped 36 items (at 36 items/min)
+2013-07-18 14:30:47+0800 [scrapy] WARNING: 未找到省市区县 http://tianjin.baixing.com/bijiben/a270995069.html
+2013-07-18 14:30:51+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a276088214.html
+2013-07-18 14:30:54+0800 [scrapy] WARNING: 未找到省市区县 http://tianjin.baixing.com/bijiben/a274337468.html
+2013-07-18 14:30:57+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a277067916.html
+2013-07-18 14:31:06+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a272482126.html
+2013-07-18 14:31:10+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a271955249.html
+2013-07-18 14:31:30+0800 [scrapy] WARNING: 未找到省市区县 http://tianjin.baixing.com/bijiben/a203450618.html
+2013-07-18 14:31:46+0800 [BaixingSpider] INFO: Crawled 80 pages (at 25 pages/min), scraped 61 items (at 25 items/min)
+2013-07-18 14:31:52+0800 [scrapy] WARNING: 未找到省市区县 http://tianjin.baixing.com/bijiben/a277379090.html
+2013-07-18 14:32:05+0800 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2013-07-18 14:32:05+0800 [BaixingSpider] INFO: Closing spider (shutdown)
+2013-07-18 14:32:06+0800 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2013-07-18 14:39:53+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-18 14:39:54+0800 [BaixingSpider] INFO: Spider opened
+2013-07-18 14:39:54+0800 [BaixingSpider] INFO: Resuming crawl (159 requests scheduled)
+2013-07-18 14:39:54+0800 [BaixingSpider] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2013-07-18 14:39:59+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a273621465.html
+2013-07-18 14:40:04+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a275564321.html
+2013-07-18 14:40:05+0800 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2013-07-18 14:40:05+0800 [BaixingSpider] INFO: Closing spider (shutdown)
+2013-07-18 14:40:11+0800 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2013-07-18 14:46:57+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-18 14:46:57+0800 [BaixingSpider] INFO: Spider opened
+2013-07-18 14:46:57+0800 [BaixingSpider] INFO: Resuming crawl (121 requests scheduled)
+2013-07-18 14:46:57+0800 [BaixingSpider] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2013-07-18 14:47:02+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a277096029.html
+2013-07-18 14:47:08+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a277321290.html
+2013-07-18 14:47:57+0800 [BaixingSpider] INFO: Crawled 17 pages (at 17 pages/min), scraped 17 items (at 17 items/min)
+2013-07-18 14:48:57+0800 [BaixingSpider] INFO: Crawled 30 pages (at 13 pages/min), scraped 30 items (at 13 items/min)
+2013-07-18 14:49:57+0800 [BaixingSpider] INFO: Crawled 45 pages (at 15 pages/min), scraped 45 items (at 15 items/min)
+2013-07-18 14:50:26+0800 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2013-07-18 14:50:26+0800 [BaixingSpider] INFO: Closing spider (shutdown)
+2013-07-18 14:50:27+0800 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2013-07-18 14:57:52+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-18 14:57:52+0800 [BaixingSpider] INFO: Spider opened
+2013-07-18 14:57:52+0800 [BaixingSpider] INFO: Resuming crawl (121 requests scheduled)
+2013-07-18 14:57:52+0800 [BaixingSpider] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2013-07-18 14:58:43+0800 [scrapy] WARNING: 未找到省市区县 http://tianjin.baixing.com/bijiben/a266304897.html
+2013-07-18 14:58:52+0800 [BaixingSpider] INFO: Crawled 26 pages (at 26 pages/min), scraped 26 items (at 26 items/min)
+2013-07-18 14:58:53+0800 [scrapy] WARNING: 未找到省市区县 http://chongqing.baixing.com/bijiben/a277555278.html
+2013-07-18 14:58:53+0800 [scrapy] WARNING: 未找到省市区县 http://tianjin.baixing.com/bijiben/a274960569.html
+2013-07-18 14:58:56+0800 [scrapy] WARNING: 未找到省市区县 http://tianjin.baixing.com/bijiben/a277096352.html
+2013-07-18 14:59:05+0800 [scrapy] WARNING: 未找到省市区县 http://tianjin.baixing.com/bijiben/a275218789.html
+2013-07-18 14:59:05+0800 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2013-07-18 14:59:05+0800 [BaixingSpider] INFO: Closing spider (shutdown)
+2013-07-18 14:59:06+0800 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2013-07-18 15:01:32+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-18 15:01:32+0800 [BaixingSpider] INFO: Spider opened
+2013-07-18 15:01:32+0800 [BaixingSpider] INFO: Resuming crawl (121 requests scheduled)
+2013-07-18 15:01:32+0800 [BaixingSpider] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2013-07-18 15:01:41+0800 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2013-07-18 15:01:41+0800 [BaixingSpider] INFO: Closing spider (shutdown)
+2013-07-18 15:01:41+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a267009725.html
+2013-07-18 15:01:42+0800 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2013-07-18 15:02:26+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-18 15:02:26+0800 [BaixingSpider] INFO: Spider opened
+2013-07-18 15:02:26+0800 [BaixingSpider] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2013-07-18 15:02:40+0800 [scrapy] WARNING: 未找到省市区县 http://handan.baixing.com/bijiben/a268876509.html
+2013-07-18 15:02:46+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a249591836.html
+2013-07-18 15:02:47+0800 [scrapy] WARNING: 未找到省市区县 http://tianjin.baixing.com/bijiben/a276384831.html
+2013-07-18 15:02:51+0800 [scrapy] WARNING: 未找到省市区县 http://tianjin.baixing.com/bijiben/a270526988.html
+2013-07-18 15:02:53+0800 [scrapy] WARNING: 未找到省市区县 http://beijing.baixing.com/bijiben/a273319329.html
+2013-07-18 15:02:59+0800 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2013-07-18 15:02:59+0800 [BaixingSpider] INFO: Closing spider (shutdown)
+2013-07-18 15:03:00+0800 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2013-07-18 15:04:04+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-18 15:06:36+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-18 15:08:03+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-18 15:08:03+0800 [BaixingSpider] INFO: Spider opened
+2013-07-18 15:08:03+0800 [BaixingSpider] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2013-07-18 15:08:31+0800 [scrapy] WARNING: 未找到省市区县 http://shijiazhuang.baixing.com/bijiben/a271457776.html
+2013-07-18 15:08:42+0800 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2013-07-18 15:08:42+0800 [BaixingSpider] INFO: Closing spider (shutdown)
+2013-07-18 15:08:42+0800 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2013-07-18 15:09:18+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-18 15:09:19+0800 [BaixingSpider] INFO: Spider opened
+2013-07-18 15:09:19+0800 [BaixingSpider] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2013-07-18 15:10:19+0800 [BaixingSpider] INFO: Crawled 74 pages (at 74 pages/min), scraped 15 items (at 15 items/min)
+2013-07-18 15:10:23+0800 [scrapy] WARNING: 未找到省市区县 http://baoding.baixing.com/bijiben/a270784132.html
+2013-07-18 15:10:34+0800 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2013-07-18 15:10:34+0800 [BaixingSpider] INFO: Closing spider (shutdown)
+2013-07-18 15:10:34+0800 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2013-07-18 15:10:34+0800 [BaixingSpider] ERROR: Image (unknown-error): Error processing image from <GET http://img5.baixing.net/17de5f331e3d86c230d12db23e4fd6ad.jpg_bi> referred in <None>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/contrib/pipeline/images.py", line 200, in media_downloaded
+	    checksum = self.image_downloaded(response, request, info)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/contrib/pipeline/images.py", line 255, in image_downloaded
+	    for key, image, buf in self.get_images(response, request, info):
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/contrib/pipeline/images.py", line 271, in get_images
+	    image, buf = self.convert_image(orig_image)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/contrib/pipeline/images.py", line 296, in convert_image
+	    image.save(buf, 'JPEG')
+	  File "/usr/local/lib/python2.7/dist-packages/PIL/Image.py", line 1406, in save
+	    self.load()
+	  File "/usr/local/lib/python2.7/dist-packages/PIL/ImageFile.py", line 201, in load
+	    raise IOError("image file is truncated (%d bytes not processed)" % len(b))
+	exceptions.IOError: image file is truncated (20 bytes not processed)
+	
+2013-08-12 16:33:11+0800 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-08-12 16:33:20+0800 [default] INFO: Spider opened

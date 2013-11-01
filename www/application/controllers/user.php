@@ -1,0 +1,76 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class User extends CI_Controller {
+
+
+	
+	public function render($template, $data=array())
+	{
+		$this->db->order_by('id', 'asc');
+		$data['categories'] = $this->db->get('categories');
+		$this->load->view('header',$data);
+		$this->load->view('nav');
+		$this->load->view($template);
+		$this->load->view('footer');
+	}
+	
+	public function register()
+	{
+		if($_SERVER["REQUEST_METHOD"] == 'GET'){
+			$this->render('user/register');
+		}
+		if($_SERVER["REQUEST_METHOD"] == 'POST'){
+        	$a=$this->db->insert('users', array(
+        			'username'=>$this->input->post('username'),
+        			'pwd'=>md5($this->input->post('pwd')),
+        			'phone'=>$this->input->post('phone'),
+        			'contact'=>$this->input->post('contact'),
+        			'city'=>$this->input->post('city'),
+        			'county'=>$this->input->post('county'),
+        			'address'=>$this->input->post('address'),
+        			'province'=>$this->input->post('province'),
+        			'email'=>$this->input->post('email'),
+        			'created'=>date("Y-m-d H:i:s"),
+        			'regip'=>$_SERVER['REMOTE_ADDR'],
+        	));
+        	
+        	$id = $this->db->insert_id();
+        	$this->session->set_userdata('uid', $id);
+            $this->session->set_flashdata('flashdata', '注册用户并成功登录！');
+            redirect(base_url($_SERVER['HTTP_REFERER']));
+		}
+	}
+    public function login()
+    {
+    	$user = $this->db->where('username', $this->input->post('username'))
+    		->or_where('email', $this->input->post('username'))
+    		->get('users')
+    		->row();
+    	
+    	if(!$user)
+    	{
+    		$this->session->set_flashdata('flashdata', '没有找到用户名或者email!');
+    	}
+    	elseif($user->pwd != md5($this->input->post('pwd')))
+    	{
+    		$this->session->set_flashdata('flashdata', '密码不正确！');
+    	}
+    	else 
+    	{
+    		$this->session->set_flashdata('flashdata', '登录成功！');
+    		$this->session->set_userdata('uid', $user->id);
+    	}
+    	
+    	redirect($_SERVER["HTTP_REFERER"]);
+
+            
+    }
+    public function logout()
+    {
+        $this->session->set_flashdata('flashdata', '已经注销登录！');
+    	$this->session->unset_userdata('uid');
+    	redirect($_SERVER["HTTP_REFERER"]);
+    }
+    
+
+}

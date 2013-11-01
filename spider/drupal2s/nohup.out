@@ -1,0 +1,1131 @@
+/usr/local/lib/python2.7/dist-packages/scrapy/settings/deprecated.py:23: ScrapyDeprecationWarning: You are using the following settings which are deprecated or obsolete (ask scrapy-users@googlegroups.com for alternatives):
+    BOT_VERSION: no longer used (user agent defaults to Scrapy now)
+  warnings.warn(msg, ScrapyDeprecationWarning)
+2013-07-17 03:13:13+0000 [scrapy] INFO: Scrapy 0.16.5 started (bot: drupal2s)
+2013-07-17 03:13:13+0000 [baixing] INFO: Spider opened
+2013-07-17 03:13:13+0000 [baixing] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2013-07-17 03:13:16+0000 [baixing] ERROR: Spider error processing <GET http://xinxiang.baixing.com/bijiben/a253397852.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:21+0000 [baixing] ERROR: Spider error processing <GET http://anyang.baixing.com/bijiben/a269880228.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:24+0000 [baixing] ERROR: Spider error processing <GET http://chongqing.baixing.com/bijiben/a266553994.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:27+0000 [baixing] ERROR: Spider error processing <GET http://shijiazhuang.baixing.com/bijiben/a225720185.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:27+0000 [baixing] ERROR: Spider error processing <GET http://chongqing.baixing.com/bijiben/a273672588.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:29+0000 [baixing] ERROR: Spider error processing <GET http://handan.baixing.com/bijiben/a276864795.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:29+0000 [baixing] ERROR: Spider error processing <GET http://shanghai.baixing.com/bijiben/a270217683.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:30+0000 [baixing] ERROR: Spider error processing <GET http://tianjin.baixing.com/bijiben/a277007212.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:30+0000 [baixing] ERROR: Spider error processing <GET http://chongqing.baixing.com/bijiben/a276299079.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:30+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a275503895.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:31+0000 [baixing] ERROR: Spider error processing <GET http://shijiazhuang.baixing.com/bijiben/a260872954.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:32+0000 [baixing] ERROR: Spider error processing <GET http://shanghai.baixing.com/bijiben/a275546312.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:33+0000 [baixing] ERROR: Spider error processing <GET http://tianjin.baixing.com/bijiben/a276829230.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:34+0000 [baixing] ERROR: Spider error processing <GET http://chongqing.baixing.com/bijiben/a276363780.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:34+0000 [baixing] ERROR: Spider error processing <GET http://shanghai.baixing.com/bijiben/a256811920.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:34+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a267009725.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:35+0000 [baixing] ERROR: Spider error processing <GET http://shijiazhuang.baixing.com/bijiben/a274081103.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:37+0000 [baixing] ERROR: Spider error processing <GET http://tianjin.baixing.com/bijiben/a276278842.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:38+0000 [baixing] ERROR: Spider error processing <GET http://chongqing.baixing.com/bijiben/a275967915.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:38+0000 [baixing] ERROR: Spider error processing <GET http://shijiazhuang.baixing.com/bijiben/a275868024.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:39+0000 [baixing] ERROR: Spider error processing <GET http://shanghai.baixing.com/bijiben/a277395099.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:39+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a272921767.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:40+0000 [baixing] ERROR: Spider error processing <GET http://shijiazhuang.baixing.com/bijiben/a259298798.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:41+0000 [baixing] ERROR: Spider error processing <GET http://tianjin.baixing.com/bijiben/a275546772.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:43+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a276901775.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:47+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a275162629.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:51+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a266516138.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:53+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a265866988.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:13:57+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a265850899.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:00+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a250908256.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:04+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a268691233.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:09+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a276907513.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:13+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a266163292.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:13+0000 [baixing] INFO: Crawled 56 pages (at 56 pages/min), scraped 0 items (at 0 items/min)
+2013-07-17 03:14:16+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a275707267.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:19+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a269502675.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:23+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a264700839.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:27+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a276919737.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:31+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a266340338.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:34+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a267523052.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:38+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a260520238.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:41+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a239626532.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:43+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a239630789.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:46+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a276763439.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:50+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a276926554.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:53+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a275584688.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:14:56+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a274215255.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:00+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a256927794.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:04+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a275580043.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:08+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a267878902.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:11+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a271490813.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:13+0000 [baixing] INFO: Crawled 73 pages (at 17 pages/min), scraped 0 items (at 0 items/min)
+2013-07-17 03:15:15+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a276747802.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:19+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a265279098.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:22+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a263176083.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:26+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a273333452.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:31+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a273393464.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:35+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a276316773.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:39+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a275136339.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:44+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a270150606.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:48+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a273113427.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:50+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a274002495.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:54+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a276728188.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:15:58+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a276945188.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:16:00+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a183362446.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:16:04+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a276636784.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:16:07+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a276951668.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:16:11+0000 [baixing] ERROR: Spider error processing <GET http://beijing.baixing.com/bijiben/a276957580.html#vcontent>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/spider/drupal2s/spiders/baixing.py", line 77, in parse_item
+	    i['city'] = self.quyu[re.search(r'http://(.*?)\.baixing.com/',response.url).groups()[0]]
+	exceptions.TypeError: tuple indices must be integers, not str
+	
+2013-07-17 03:16:13+0000 [baixing] INFO: Crawled 89 pages (at 16 pages/min), scraped 0 items (at 0 items/min)

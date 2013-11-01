@@ -1,0 +1,43 @@
+<div class="span9">
+<div class="span9"><br><h3><?php echo $product->title;?></h3><hr></div>
+<div class="row ">
+<div class="span1">类别</div>
+  <div class="span8"><?php echo $product->category?></div>
+</div>
+<div class="row ">
+<div class="span1">地址</div>
+  <div class="span8"><?php echo $city->name?> - <?php echo $county->name;?> - <?php echo $product->address?></div>
+</div>
+<div class="row ">
+<div class="span1">售价</div>
+  <div class="span8 "><span class="info"><?php echo $product->price?></span></div>
+</div>
+<div class="row ">
+<div class="span1">联系人</div>
+  <div class="span8"><?php echo $product->contact?></div>
+</div>
+<div class="row ">
+<div class="span1">电话</div>
+  <div class="span8"><?php echo $product->phone?></div>
+</div>
+
+<div class="row ">
+
+  <div class="span9">详细说明：</div>
+</div>
+
+<div class="row ">
+
+  <div class="span8 offset1"><?php echo $product->body?></div>
+</div>
+<div class="row ">
+
+  <div class="span9">
+  <?php foreach($pic as $p):?>
+  <img src="/files/<?php echo $p->path;?>">
+  <?php endforeach;?>
+  
+  </div>
+</div>
+</div>
+

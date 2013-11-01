@@ -1,0 +1,82 @@
+<div class="span9">
+<form class="form-horizontal">
+  <fieldset>
+    <legend>发布信息</legend>
+    
+    <div class="control-group">
+        <label class="control-label" for="title">标题</label>
+        <div class="controls">
+        <input type="text" id="title" placeholder="title" name="title">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="category">分类</label>
+        <div class="controls">
+        <select name="category" class="span2">
+        <option>--请选择分类--</option>
+        <?php foreach($categories->result() as $c):?>
+        <option value="<?php echo $c->id;?>"><?php echo $c->title;?></option>
+        <?php endforeach;?>        
+        </select> 
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="contact">联系人</label>
+        <div class="controls">
+        <input type="text" id="contact" placeholder="contact" name="contact">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="phone">电话</label>
+        <div class="controls">
+        <input type="text" id="phone" phone="title" name="phone">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="county">地址</label>
+        <div class="controls">
+       <select name="city" class="span2" id="city">
+        </select>
+        <select name="county" class="span2" id="county">
+        </select><input type="text" id="address" placeholder="address" name="address">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="inputtitle">详细内容</label>
+        <div class="controls">
+        <textarea id="body" placeholder="body" name="body" rows="4" class="span5"></textarea>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="address"></label>
+        <div class="controls">
+        <button class="ui-button-primary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">提　交</span></button>
+        </div>
+    </div>
+    
+  </fieldset>
+</form>
+</div>  
+<script type="text/javascript" >
+function area(selectid, pid){
+$.getJSON('/index.php/area/ajax?pid='+pid, function(json){
+        $('#'+selectid).append('<option value="0">--请选择--</option>');
+        $.each(json, function(i,data){
+            $('#'+selectid).append('<option value="'+data.id+'">"'+data.name+'</option>');
+        });
+    });
+}
+$(function(){
+    area('city', '230000');
+    $('#city').change(function () {
+        var pid = $(this).val();
+	    if(pid == '0'){$('#county').html('<option value="0">--请选择区/县--</option>');}
+        else{
+            area('county', pid);
+        }
+    });
+});
+</script>     
